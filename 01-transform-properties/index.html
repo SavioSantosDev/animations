@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform properties</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div id="rotate">
+          <div class="box rotate">rotate</div>
+          <div class="box rotateX">rotateX</div>
+          <div class="box rotateY">rotateY</div>
+          <ul>
+            <li>
+              A quantidade de rotação é especificado por um ângulo(deg) com o
+              sentido no movimento horário se positivo e anti-horário se
+              negativo.
+            </li>
+            <li>
+              O efeito de <strong>animation-direction: alternate</strong> só vai
+              ser visível se <strong>animation-iteration-count </strong> for um
+              número PAR. (Propriedade utilizada no rotateY)
+            </li>
+          </ul>
+        </div>
+
+        <div id="skew" class="box">skew</div>
+        <div id="translate" class="box">translate</div>
+        <div id="scale" class="box">scale</div>
+        <div id="perspective" class="box">perspective</div>
+      </div>
+    </main>
+  </body>
+</html>
