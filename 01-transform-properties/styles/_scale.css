@@ -1,0 +1,62 @@
+#scale .box {
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#scale .scale {
+  animation-name: scale;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+
+@keyframes scale {
+  from {
+    transform: none;
+  }
+
+  25% {
+    transform: scale(0.5, 0.5);
+  }
+
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+
+  75% {
+    transform: scale(0.8, 0.8);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+#scale .scaleX {
+  animation-name: scaleX;
+}
+
+@keyframes scaleX {
+  from {
+    transform: scaleX(1);
+  }
+
+  to {
+    transform: scaleX(-1);
+  }
+}
+
+#scale .scaleY {
+  animation-name: scaleY;
+  animation-direction: alternate;
+}
+
+@keyframes scaleY {
+  from {
+    transform: scaleY(2);
+  }
+
+  to {
+    transform: scaleY(4);
+  }
+}
