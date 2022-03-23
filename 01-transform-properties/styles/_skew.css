@@ -1,0 +1,67 @@
+#skew {
+  grid-template-areas: ". . ." ". . ." "anotations anotations anotations";
+}
+
+#skew .box {
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+#skew .skew {
+  animation-name: skew;
+  animation-direction: alternate;
+}
+
+@keyframes skew {
+  from {
+    transform: none;
+  }
+
+  25% {
+    transform: skew(30deg, 30deg);
+  }
+
+  75% {
+    transform: skew(-30deg, -30deg);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+#skew .skewX {
+  animation-name: skewX;
+  animation-direction: alternate;
+  animation-duration: 5s;
+}
+
+@keyframes skewX {
+  from {
+    transform: skewX(0);
+  }
+
+  50% {
+    transform: skewX(90deg);
+  }
+
+  to {
+    transform: skewX(0);
+  }
+}
+
+#skew .skewY {
+  animation-name: skewY;
+  animation-duration: 1s;
+}
+
+@keyframes skewY {
+  from {
+    transform: skewY(30deg);
+  }
+
+  to {
+    transform: skewY(-30deg);
+  }
+}

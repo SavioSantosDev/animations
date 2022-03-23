@@ -1,22 +1,4 @@
-#rotate {
-  margin-bottom: 72px;
-
-  display: grid;
-  gap: 32px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: ". . ." "anotations anotations anotations";
-}
-
 #rotate .box {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#rotate ul {
-  grid-area: anotations;
-}
-
-#rotate div {
   animation-iteration-count: infinite;
   animation-duration: 2s;
   animation-timing-function: linear;
