@@ -4,6 +4,7 @@
 
 @import url("./styles/_rotate.css");
 @import url("./styles/_skew.css");
+@import url("./styles/_translate.css");
 
 body {
   background-color: var(--color-dark);

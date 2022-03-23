@@ -1,7 +1,3 @@
-#skew {
-  grid-template-areas: ". . ." ". . ." "anotations anotations anotations";
-}
-
 #skew .box {
   animation-timing-function: linear;
   animation-duration: 2s;
